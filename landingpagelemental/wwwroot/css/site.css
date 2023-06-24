@@ -1,0 +1,80 @@
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+}
+.shadow-bottom {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.botonceles
+{
+  border-radius: 37px;
+  background-color: #0CB7F2; 
+  color: white; 
+  width: 150px
+}
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a {
+  color: #0077cc;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer {
+  min-height: 300px; /* Establece una altura mínima para el footer */
+  display: flex; /* Utiliza flexbox para ajustar el contenido */
+  flex-wrap: wrap; /* Permite que el contenido se ajuste a múltiples líneas si es necesario */
+  justify-content: space-between; /* Distribuye el contenido horizontalmente */
+  align-items: center; /* Centra verticalmente el contenido */
+}
+.custom-link {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
