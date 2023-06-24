@@ -78,3 +78,15 @@ button.accept-policy {
   text-decoration: none;
   transition: color 0.3s;
 }
+.custom-form-container {
+  width: 70%;
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+  .custom-form-container {
+    width: 100%;
+    max-width: none;
+  }
+}
