@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nolej\\OneDrive\\Escritorio\\Proyecto\\landingpagelemental\\landingpagelemental\\landingpagelemental.csproj": {}
+    "c:\\Users\\gerar\\OneDrive\\Escritorio\\ASK\\noleLandingElemental\\landingelemental\\landingpagelemental\\landingpagelemental.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nolej\\OneDrive\\Escritorio\\Proyecto\\landingpagelemental\\landingpagelemental\\landingpagelemental.csproj": {
+    "c:\\Users\\gerar\\OneDrive\\Escritorio\\ASK\\noleLandingElemental\\landingelemental\\landingpagelemental\\landingpagelemental.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nolej\\OneDrive\\Escritorio\\Proyecto\\landingpagelemental\\landingpagelemental\\landingpagelemental.csproj",
+        "projectUniqueName": "c:\\Users\\gerar\\OneDrive\\Escritorio\\ASK\\noleLandingElemental\\landingelemental\\landingpagelemental\\landingpagelemental.csproj",
         "projectName": "landingpagelemental",
-        "projectPath": "C:\\Users\\nolej\\OneDrive\\Escritorio\\Proyecto\\landingpagelemental\\landingpagelemental\\landingpagelemental.csproj",
-        "packagesPath": "C:\\Users\\nolej\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nolej\\OneDrive\\Escritorio\\Proyecto\\landingpagelemental\\landingpagelemental\\obj\\",
+        "projectPath": "c:\\Users\\gerar\\OneDrive\\Escritorio\\ASK\\noleLandingElemental\\landingelemental\\landingpagelemental\\landingpagelemental.csproj",
+        "packagesPath": "C:\\Users\\gerar\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\gerar\\OneDrive\\Escritorio\\ASK\\noleLandingElemental\\landingelemental\\landingpagelemental\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nolej\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\gerar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
