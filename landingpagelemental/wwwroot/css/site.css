@@ -79,7 +79,7 @@ button.accept-policy {
   z-index: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .custom-form-container {
     width: 100%;
     max-width: none;
@@ -91,5 +91,11 @@ button.accept-policy {
   border-radius: 10px;
   background-color: #0CB7F2;
   color: white;
+  width: 150px
+}
+.botonlogin
+{
+  border-radius: 10px;
+  border-color: #0CB7F2;
   width: 150px
 }
