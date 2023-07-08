@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="~/landingpagelemental.styles.css" asp-append-version="true"/>
     <link rel="stylesheet" href="./_Layout.cshtml.css">
 </head>
-<body>
+<body style="padding-top: 70px">
 <header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow " style="z-index: 1000">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow" style="z-index: 1000; position: fixed; top: 0; width: 100%;">
         <div class="container-fluid">
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="margin-right: auto;" >
                 <img src="/img/elemental.png" alt="Logo Elemental" style="height: 35px">
@@ -53,41 +53,39 @@
 </div>
 <footer class="border-top footer text-muted py-5">
     <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h4 style="color:#0CB7F2;">Contacto</h4>
-                    <ul class="list-unstyled">
-                        <li><strong>Instagram:</strong><a href="https://instagram.com/elemental_software.pe?igshid=MzRlODBiNWFlZA==" class="custom-link"> elemental_software.pe</a></li>
-                        <li><strong>Whatsapp:</strong> +51 942 229 982</li>
-                        <li><strong>Correo :</strong> elemental.info@askcorp.pe</li>
-                    </ul>
-                    <div class="mt-4 mb-4">
-                        <label for="email"><strong>Suscríbete:</strong></label>
-                        <div class="input-group">
-                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu e-mail" required>
-                        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h4 style="color:#0CB7F2;">Contacto</h4>
+                <ul class="list-unstyled">
+                    <li><strong>Instagram:</strong><a href="https://instagram.com/elemental_software.pe?igshid=MzRlODBiNWFlZA==" class="custom-link"> elemental_software.pe</a></li>
+                    <li><strong>Whatsapp:</strong> +51 942 229 982</li>
+                    <li><strong>Correo :</strong> elemental.info@askcorp.pe</li>
+                </ul>
+                <div class="mt-4 mb-4">
+                    <label for="email"><strong>Suscríbete:</strong></label>
+                    <div class="input-group">
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu e-mail" required>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <h4 style="color:#0CB7F2;">Menú</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#inicio" class="custom-link">Inicio</a></li>
-                        <li><a href="#contacto" class="custom-link">Planes y Precios </a></li>
-                        <li><a href="#contacto" class="custom-link">Contáctanos</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h4 style="color:#0CB7F2;">Nosotros</h4>
-                    <p class="my-4">Simplifica y expande tu negocio con un sistema ágil que conecta tus locales físicos con tu E-Commerce.</p>
-                </div>
+            </div>
+            <div class="col-md-4">
+                <h4 style="color:#0CB7F2;">Menú</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#inicio" class="custom-link">Inicio</a></li>
+                    <li><a href="#contacto" class="custom-link">Planes y Precios </a></li>
+                    <li><a href="#contacto" class="custom-link">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4 style="color:#0CB7F2;">Nosotros</h4>
+                <p class="my-4">Simplifica y expande tu negocio con un sistema ágil que conecta tus locales físicos con tu E-Commerce.</p>
             </div>
         </div>
+    </div>
 </footer>
-
-
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
 @await RenderSectionAsync("Scripts", required: false)
-</body>
+</body> 
 </html>
