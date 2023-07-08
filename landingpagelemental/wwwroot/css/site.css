@@ -68,10 +68,11 @@ button.accept-policy {
   align-items: center; /* Centra verticalmente el contenido */
 }
 .custom-link {
-  color: #000;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+   color: #000;
+   text-decoration: none;
+   transition: color 0.3s;
+ }
+
 .custom-form-container {
   width: 65%;
   border-radius: 50px;
@@ -79,23 +80,36 @@ button.accept-policy {
   z-index: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .custom-form-container {
     width: 100%;
     max-width: none;
   }
+  
+}
+.final {
+  transform: translateY(-200px);
 }
 
-.botonceles
-{
+@media (max-width: 912px) {
+  .final.mobile {
+    transform: translateY(0);
+  }
+}
+
+.botonceles {
   border-radius: 10px;
   background-color: #0CB7F2;
   color: white;
-  width: 150px
+  width: 150px;
 }
-.botonlogin
-{
+
+.botonlogin {
   border-radius: 10px;
   border-color: #0CB7F2;
-  width: 150px
+  width: 150px;
+}
+
+.fourth-section {
+  background: linear-gradient(to bottom, #0CB7F2 50%, white 50%);
 }

@@ -2,7 +2,7 @@
     ViewData["Title"] = "Home Page";
 }
 <div xmlns="http://www.w3.org/1999/html">
-    <section id="inicio" class="first-section d-flex align-items-center text-center" style="background-image: url('/img/section1back.png');height: 864px;  width: 100%; background-size: cover;">
+    <section id="inicio" class="first-section d-flex align-items-center text-center" style="background-image: url('/img/section1back.png');  width: 100%; background-size: cover;">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mt-5">
@@ -14,10 +14,10 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="soluciones" class="second-section d-flex align-items-center" style="background-image: url('/img/fondoventas.png');height: 1050px; background-size: cover; width: 100%;">
-        <div class="container">
-            <div class="col-md-8 mx-auto d-flex text-center">
+    </section>  
+    <section id="soluciones" class="second-section d-flex align-items-center" style="background-image: url('/img/fondoventas.png'); background-size: cover; width: 100%;">
+        <div class="container mb-5">
+            <div class="col-md-8 mx-auto d-flex text-center mt-5 ">
                 <h2 style="color: #004B7D; font-weight: 700;">Empodera tu negocio con todo lo que necesitas para tener el control</h2>
             </div>
             <div class="row mt-5">
@@ -56,7 +56,7 @@
             </div>
         </div>
     </section>
-        <section id="contacto" class="third-section" style="background-color: #0CB7F2;height: 337px;">
+    <section id="contacto" class="third-section" style="background-color: #0CB7F2;">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 align-self-center mt-5">
@@ -70,30 +70,27 @@
             </div>
         </div>
     </section>
-    <section id="comienza" class="fourth-section d-flex align-items-center mb-5 container-fluid" style="background-image: url('/img/backf.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; ">
-        <div class="row container-fluid">
-            <div class="col-md-6">
-                <div class="p-5">
-                    <div class="row text-white">
-                        <div class="col-md-6 align-self-center mt-2">
-                            <h1 class="mb-3" style="font-size: 34px; font-weight: 800;">INSCRÍBETE</h1>
-                            <p><b>¡Descubre el poder de Elemental!</b> <br>Regístrate ahora y aprovecha todos los beneficios que nuestra innovadora plataforma de software ofrece para impulsar tus negocios.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="/img/vuela.png" alt="Imagen de Vuela" class="img-fluid">
-                        </div>
-                    </div>
-                    <p class="mt-5 text-muted">Con Elemental, podrás automatizar tus procesos empresariales, desde la gestión de inventario y compras hasta la contabilidad y la generación de informes. Olvídate de las tareas tediosas y dedica tu tiempo y recursos a lo que realmente importa: hacer crecer tu negocio.</p>
+<section id="comienza" class="fourth-section mb-5 container-fluid" >
+    <div class="row flex-wrap">
+        <div class="col-lg-5 col-xl-5 p-5">
+            <div class="row">
+                <div class="col-lg-6 col-xl-6 text-white">
+                    <h1 class="mb-3" style="font-size: 34px; font-weight: 800;">INSCRÍBETE</h1>
+                    <p><b>¡Descubre el poder de Elemental!</b><br>Regístrate ahora y aprovecha todos los beneficios que nuestra innovadora plataforma de software ofrece para impulsar tus negocios.</p>
                 </div>
+                <div class="col-lg-6 col-xl-6"><img src="/img/vuela.png" alt="Imagen de Vuela" class="img-fluid" ></div>
             </div>
-            <div class="col-md-6 d-flex justify-content-center align-items-center mt-5 mb-5" >
-                <div class="mt-5 custom-form-container" style="  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
-                    <div class="modal-content " style=" border-radius: 30px">
-                        <div class="col mt-3 text-center" >
-                            <p style="color: #000; font-size: 24px; margin-bottom: 10px;">Bienvenido a <span style="color: #0CB7F2; font-size: 21px;">ELEMENTAL</span></p>
-                            <h4 style="color: #000; font-size: 32px; font-weight: 700; margin-top: 0;">CREA TU CUENTA GRATIS</h4>
+        </div>
+        <div class="col-lg-7 col-xl-7 mb-5" style="margin-top: 150px;">
+            <div class="d-flex align-items-end justify-content-center h-100">
+                <div class="custom-form-container" style="border-radius: 50px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); z-index: 0;">
+                    <div class="modal-content" style="border-radius: 30px;">
+                        <div class="col mt-3 text-center">
+                            <p style="color: #000; font-size: 24px; margin-bottom: 10px;">Bienvenido a <span style="color: #0CB7F2; font-size: 21px; font-weight: bold">ELEMENTAL</span></p>
+                            <h4 style="color: #000; font-size: 32px; font-weight: 700; margin-top: 0;">CREA TU CUENTA <span style="color: goldenrod;">GRATIS</span></h4>
+
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body px-5">
                             <form>
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
@@ -128,11 +125,19 @@
                             </form>
                         </div>
                         <div class="modal-footer d-flex align-items-center justify-content-center">
-                            <button type="submit" class="btn botonceles" style="width: 300px;">Siguiente</button>
+                            <button type="submit" class="btn botonceles">Siguiente</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="col-lg-5 col-xl-5 mb-5 final mobile">
+            <div class="p-5">
+                <p class="text-muted">Con Elemental, podrás automatizar tus procesos empresariales, desde la gestión de inventario y compras hasta la contabilidad y la generación de informes. Olvídate de las tareas tediosas y dedica tu tiempo y recursos a lo que realmente importa: hacer crecer tu negocio.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 </div>
