@@ -110,7 +110,7 @@ const sendRegister = async () => {
     };
 
     try {
-        // Realizar la solicitud a la API
+        //solicitud API
         const response = await fetch("https://payment-services.askcorp.pe/elemental", {
             method: "POST",
             headers: {
@@ -119,7 +119,7 @@ const sendRegister = async () => {
             body: JSON.stringify(data)
         });
 
-        // Verificar el estado de la respuesta
+        // stado de la respuesta
         if (response.ok) {
             // La solicitud se completó correctamente
             const responseData = await response.json();
@@ -129,7 +129,7 @@ const sendRegister = async () => {
             console.log("Error en el registro:", response.status);
         }
     } catch (error) {
-        // Ocurrió un error al realizar la solicitud
+        // Ocurrió un error
         console.error("Error al realizar la solicitud:", error);
     }
 };
