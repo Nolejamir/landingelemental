@@ -18,7 +18,7 @@ function showStep(step) {
 }
 
 function validateStep1() {
-    /*
+
     if (!/^\d{8}$/.test(dni.value)) {
         alert("El campo DNI debe contener 8 dígitos numéricos.");
         return;
@@ -28,7 +28,6 @@ function validateStep1() {
         alert("El campo Número de celular debe contener 9 dígitos numéricos.");
         return;
     }
-    */
     showStep(2);
 }
 
@@ -58,8 +57,13 @@ function validateInput(input) {
     input.value = input.value.replace(/[^A-Za-záéíóúÁÉÍÓÚñÑ\s]/g, "");
 }
 
+window.addEventListener("load",  async () => {
+    const req = await fetch("https://rickandmortyapi.com/api");
+
+})
+
 const sendRegister = async () => {
-    const request = fetch("https://payment-services.askcorp.pe/elemental", {
+    const request = await fetch("https://payment-services.askcorp.pe/elemental", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -80,3 +84,4 @@ const sendRegister = async () => {
         })
     })
 }
+
