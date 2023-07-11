@@ -133,7 +133,7 @@
                                     <button type="button" class="btn botonceles" onclick="validateStep1()">Siguiente</button>
                                 </div>
                             </form>
-                            <form id="step-2" style="display: none;">
+                            <form id="step-2" style="display: none;" onsubmit="sendRegister()">
                                 <div class="form-group mb-3">
                                     <label for="email" style="color: #000;">Email</label>
                                     <input type="email" class="form-control" id="email" placeholder="Email" required>
@@ -146,9 +146,15 @@
                                     <label for="confirmar-contrasena" style="color: #000;">Confirmar contraseña</label>
                                     <input type="password" class="form-control" id="confirmar-contrasena" placeholder="Confirmar contraseña" oninput="validatePasswordsMatch()" required>
                                 </div>
+                                <div class="form-group mb-3">
+                                    <label for="email" style="color: #000;">Plan</label>
+                                    <select id="select-plan" class="form-control" required>
+
+                                    </select>
+                                </div>
                                 <small style="color: gray;">Evita utilizar números consecutivos, como 1, 2, 3, 4, 5, 6, y también evita utilizar tu fecha de cumpleaños.</small>
                                 <div class="modal-footer d-flex align-items-center justify-content-center">
-                                    <button type="button" class="btn botonceles" onclick="validateStep2()">Finalizar</button>
+                                    <button type="button" class="btn botonceles" onclick="sendRegister()">Finalizar</button>
                                 </div>
                             </form>
                         </div>
@@ -163,4 +169,3 @@
         </div>
     </div>
 </section>
-<script src="js/site.js"></script>
