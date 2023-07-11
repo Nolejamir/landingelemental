@@ -91,18 +91,15 @@ const sendRegister = async () => {
         }]
     });
     
-    console.log(reqBOdy);
     const request = await fetch(`/api/send`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Accept": "*/*",
-            "Accept-Encoding": "gzip, deflate, br",
-            "Connection": "keep-alive"
         },
         body: reqBOdy
     })
-    const response = await request.json();
+    const response = JSON.parse(await request.json());
+    console.log(response);
     if (response.message) {
         alert(response.message);
         return;

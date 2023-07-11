@@ -19,7 +19,6 @@ public class ApiController : Controller
         );
         var response = await client.PostAsync("https://payment-services.vercel.app/elemental", jsonContent);
         var responseBody = await response.Content.ReadAsStringAsync();
-        Console.WriteLine(responseBody);
         return Json(responseBody);
     }
 }
