@@ -7,10 +7,9 @@ const cell = document.getElementById("numero-celular");
 const email = document.getElementById("email");
 const password = document.getElementById("contrasena");
 const selectPlan = document.getElementById("select-plan");
-const url = "https://payment-services.vercel.app";
 
 window.addEventListener("load", async () => {
-    const req = await fetch(`${url}/elemental/plans`);
+    const req = await fetch(`https://payment-services.vercel.app/elemental/plans`);
     const reqJson = await req.json();
     reqJson.forEach(e => {
         selectPlan.innerHTML += `
@@ -77,38 +76,41 @@ function validateInput(input) {
 
 
 const sendRegister = async () => {
-    console.log("execute");
     const typePlan = selectPlan.options[selectPlan.selectedIndex].value;
-    const request = await fetch(`${url}/elemental`, {
+    const reqBOdy =  JSON.stringify({
+        programId: "33b4028b-1ecb-11ee-bfc6-0200000cf393", //TODO elemental idProd
+        body: [{
+            name: name.value.trim(),
+            lastName: lastName.value.trim(),
+            business: business.value.trim() ?? "",
+            businessName: businessName.value.trim() ?? "",
+            dni: dni.value.trim(),
+            cell: cell.value.trim(),
+            password: password.value.trim(),
+            tpPlan: typePlan.trim(), //TODO select
+        }]
+    });
+    
+    console.log(reqBOdy);
+    const request = await fetch(`/api/send`, {
         method: "POST",
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive"
         },
-        body: JSON.stringify({
-            programId: "33b4028b-1ecb-11ee-bfc6-0200000cf393", //TODO elemental idProd
-            body: [{
-                name: name.value.trim(),
-                lastName: lastName.value.trim(),
-                business: business.value.trim(),
-                businessName: businessName.value.trim(),
-                dni: dni.value.trim(),
-                cell: cell.value.trim(),
-                password: password.value.trim(),
-                tpPlan: typePlan.trim(), //TODO select
-            }]
-        })
+        body: reqBOdy
     })
     const response = await request.json();
-    console.log(response)
-    
     if (response.message) {
         alert(response.message);
         return;
     }
     
     alert("Por favor verifica tu email, ahi esta llegando tu usuario y contraseña, gracias por registrarte en elemental")
-    
 }
+
 /*const sendRegister = async () => {
     // Obtener los valores de los campos del formulario
     const nombres = document.getElementById('nombres').value.trim();
