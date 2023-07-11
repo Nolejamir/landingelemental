@@ -7,7 +7,7 @@ const cell = document.getElementById("numero-celular");
 const email = document.getElementById("email");
 const password = document.getElementById("contrasena");
 const selectPlan = document.getElementById("select-plan");
-const url = "http://localhost:3000";
+const url = "https://payment-services.vercel.app";
 
 window.addEventListener("load", async () => {
     const req = await fetch(`${url}/elemental/plans`);
