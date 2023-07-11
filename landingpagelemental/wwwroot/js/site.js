@@ -29,6 +29,12 @@ function showStep(step) {
         
     }
 }
+function goToStep(step) {
+    if (step === 1) {
+        document.getElementById("step-1").style.display = "block";
+        document.getElementById("step-2").style.display = "none";
+    }
+}
 
 function validateStep1() { 
     if (!/^\d{8}$/.test(dni.value)) {
