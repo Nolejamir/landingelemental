@@ -83,5 +83,8 @@ const sendRegister = async () => {
             }]
         })
     })
+
+    console.log(await request.json())
+    
 }
 
