@@ -1,19 +1,32 @@
-﻿let name = document.getElementById("");
-let lastName = document.getElementById("");
-let business = document.getElementById("");
-let businessName = document.getElementById("");
-let dni = document.getElementById("dni");
-let cell = document.getElementById("numero-celular");
-let email = document.getElementById("email");
-let password = document.getElementById("contrasena");
-let typePlan = "0003"; //document...
+﻿const name = document.getElementById("nombres");
+const lastName = document.getElementById("apellidos");
+const business = document.getElementById("nombre-empresa");
+const businessName = document.getElementById("razon-social");
+const dni = document.getElementById("dni");
+const cell = document.getElementById("numero-celular");
+const email = document.getElementById("email");
+const password = document.getElementById("contrasena");
+const selectPlan = document.getElementById("select-plan");
+const url = "http://localhost:3000";
+
+window.addEventListener("load", async () => {
+    const req = await fetch(`${url}/elemental/plans`);
+    const reqJson = await req.json();
+    reqJson.forEach(e => {
+        selectPlan.innerHTML += `
+        <option value="${e.TpCodigo}">
+            ${e.TpNombre}
+        </option>
+`
+    })
+})
 
 function showStep(step) {
     if (step === 2) {
         document.getElementById("step-1").style.display = "none";
         document.getElementById("step-2").style.display = "block";
     } else if (step === 3) {
-        //agregar la lógica para procesar los datos del formulario y finalizar el registro en la BD vivaaaaaaa
+        
     }
 }
 
@@ -32,7 +45,7 @@ function validateStep1() {
 
 function validateStep2() {
     const confirmarContrasenaInput = document.getElementById("confirmar-contrasena");
-
+    
     if (!validateEmail(email.value)) {
         alert("Por favor, ingresa un correo electrónico válido.");
         return;
@@ -48,7 +61,7 @@ function validateStep2() {
 }
 
 function validateEmail(email) {
-    const emailRegex = /^[\w.-]+@@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
 
@@ -56,19 +69,17 @@ function validateInput(input) {
     input.value = input.value.replace(/[^A-Za-záéíóúÁÉÍÓÚñÑ\s]/g, "");
 }
 
-window.addEventListener("load",  async () => {
-    const req = await fetch("https://rickandmortyapi.com/api");
-
-})
 
 const sendRegister = async () => {
-    const request = await fetch("https://payment-services.askcorp.pe/elemental", {
+    console.log("execute");
+    const typePlan = selectPlan.options[selectPlan.selectedIndex].value;
+    const request = await fetch(`${url}/elemental`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            programId: "3d020259-3fa6-4d24-a78f-d4ac8bf006ec",
+            programId: "33b4028b-1ecb-11ee-bfc6-0200000cf393", //TODO elemental idProd
             body: [{
                 name: name.value.trim(),
                 lastName: lastName.value.trim(),
@@ -78,12 +89,18 @@ const sendRegister = async () => {
                 cell: cell.value.trim(),
                 password: password.value.trim(),
                 tpPlan: typePlan.trim(), //TODO select
-                
             }]
         })
     })
-
-    console.log(await request.json())
+    const response = await request.json();
+    console.log(response)
+    
+    if (response.message) {
+        alert(response.message);
+        return;
+    }
+    
+    alert("Por favor verifica tu email, ahi esta llegando tu usuario y contraseña, gracias por registrarte en elemental")
     
 }
 /*const sendRegister = async () => {
