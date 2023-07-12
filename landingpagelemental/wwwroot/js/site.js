@@ -77,26 +77,28 @@ function validateInput(input) {
 
 const sendRegister = async () => {
     const typePlan = selectPlan.options[selectPlan.selectedIndex].value;
-    const reqBOdy =  JSON.stringify({
+    const reqBody =  JSON.stringify({
         programId: "33b4028b-1ecb-11ee-bfc6-0200000cf393", //TODO elemental idProd
         body: [{
             name: name.value.trim(),
             lastName: lastName.value.trim(),
             business: business.value.trim() ?? "",
             businessName: businessName.value.trim() ?? "",
+            email: email.value.trim().toLowerCase(),
             dni: dni.value.trim(),
             cell: cell.value.trim(),
             password: password.value.trim(),
             tpPlan: typePlan.trim(), //TODO select
         }]
     });
+    console.log(JSON.parse(reqBody))
     
     const request = await fetch(`/api/send`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body: reqBOdy
+        body: reqBody
     })
     const response = JSON.parse(await request.json());
     console.log(response);
