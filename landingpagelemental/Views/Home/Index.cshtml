@@ -1,22 +1,38 @@
 ﻿@{
     ViewData["Title"] = "Elemental";
 }
-<style>
-    input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-</style>
-<section id="inicio" class="first-section d-flex align-items-center text-center" style="background-image: url('/img/section1back.png');  width: 100%; background-size: cover;">
+<section id="inicio" class="first-section d-flex align-items-center text-center" style="background-image: url('/img/fondo1.png'); width: 100%; background-size: cover;">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-md-4 mt-5">
                 <h1 class="text-white">Software para gestión de ventas e inventario.</h1>
                 <p class="text-white">Simplifica y expande tu negocio con un sistema ágil que conecta tus locales físicos con tu E-commerce.</p>
             </div>
             <div class="col-md-8">
                 <img src="/img/laptop.png" alt="Laptop" class="img-fluid">
+            </div>
+        </div>
+        <div class="row mt-4 justify-content-center">
+            <div class="col-md-5">
+                <div class="input-container d-flex" style="background: white;border-radius: 24px;border-color: white ">
+                    <input type="email" class="form-control" placeholder="&#xf0e0; Ingrese su correo" style="font-family: 'Font Awesome 5 Free'; border-color: white; border-radius: 24px;">
+                    <button class=" px-3 py-2 mt-1 mb-1 me-1 flex-shrink-0" style="background-color: #0CB7F2; color: white; border-radius: 24px; border-color: white">Empezar gratis</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 mb-5">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <div class="me-4">
+                        <p class="text-white"><img src="/img/check1.png" alt="Check" class="img-fluid">15 Días gratis</p>
+                    </div>
+                    <div class="me-4">
+                        <p class="text-white"><img src="/img/check1.png" alt="Check" class="img-fluid">No tarjetas de crédito</p>
+                    </div>
+                    <div>
+                        <p class="text-white"><img src="/img/check1.png" alt="Check" class="img-fluid">Sin instalación</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -65,108 +81,170 @@
 <section id="contacto" class="third-section" style="background-color: #0CB7F2;">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6 align-self-center mt-5">
-                <h2 style="color: white;">Estamos listos para trabajar juntos</h2>
-                <p style="color: white;">Si necesitas mayor asesoría, contáctanos vía WhatsApp o agenda una reunión con nosotros.</p>
-                <button type="button" class="btn btn-primary mb-4" style="background-color: white; color: #0CB7F2;border-radius: 37px">Trabajemos juntos</button>
+            <div class="col-md-1 "></div>
+            <div class="col-md-4  mt-5">
+                <h2 style="color: white; max-width: 400px;"><strong>Estamos listos</strong> para <strong>trabajar juntos</strong></h2>
+                    <p style="color: white; max-width: 400px;">Si necesitas mayor asesoría, contáctanos vía WhatsApp o agenda una reunión con nosotros.</p>
+                <button type="button" class="btn btn-primary mb-4" style="background-color: white; color: #0CB7F2;border-radius: 37px"><strong>TRABAJEMOS JUNTOS</strong></button>
             </div>
-            <div class="col-md-6">
-                <img src="/img/trabaja.png" alt="Trabaja" class="img-fluid">
+            <div class="col-md-1 "></div>
+            <div class="col-md-6" style="background-image: url('/img/trabaja.png'); background-size: cover; background-position: center;">
+                <img src="/img/trabaja.png" alt="Trabaja" class="img-fluid" style="visibility: hidden; width: 100%;">
             </div>
         </div>
     </div>
 </section>
-<section id="comienza" class="fourth-section mb-5 container-fluid">
-    <div class="row flex-wrap">
-        <div class="col-lg-5 col-xl-5 p-5">
-            <div class="row">
-                <div class="col-lg-6 col-xl-6 text-white">
-                    <h1 class="mb-3" style="font-size: 34px; font-weight: 800;">INSCRÍBETE</h1>
-                    <p><b>¡Descubre el poder de Elemental!</b><br>Regístrate ahora y aprovecha todos los beneficios que nuestra innovadora plataforma de software ofrece para impulsar tus negocios.</p>
-                </div>
-                <div class="col-lg-6 col-xl-6">
-                    <img src="/img/vuela.png" alt="Imagen de Vuela" class="img-fluid">
+<section id="planes" class="fourth-section mb-5 container-fluid">
+  <div class="container">
+    <div class="text-center mt-5">
+      <h1 style=" color: #0CB7F2"><strong>ELIJA</strong> SU <strong>PLAN</strong></h1>
+      <P>Pruebe 15 días sin riesgo y actualice en cualquier momento, sin preguntas ni complicaciones</P>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-4 mt-1 ">
+            <div class="card h-100" style="background-color: #0CB7F2; height: 100%;border-radius: 12px">
+                <div class="card-body d-flex flex-column">
+                    <p class="card-title text-center" style="color: white;">mejor precio</p>
+                    <h3 class="card-title text-center" style="color: white;">Platino</h3>
+                    <h3 class="card-title text-center" style="color: white;">S/. 150/mes</h3>
+                    <ul style="list-style: none;" class="mt-4 flex-grow-1">
+                        <li class="" style="color: white;">
+                            <img src="/img/check.png" alt="Check" class="img-fluid" style="filter: brightness(0) invert(1);">
+                            5 Usuarios
+                        </li>
+                        <li class="mt-4" style="color: white;">
+                            <img src="/img/check.png" alt="Check" class="img-fluid" style="filter: brightness(0) invert(1);">
+                            Prefacturación limitado
+                        </li>
+                        <li class="mt-4" style="color: white;">
+                            <img src="/img/check.png" alt="Check" class="img-fluid" style="filter: brightness(0) invert(1);">
+                            Registro de servicios (500)
+                        </li>
+                        <li class="mt-4" style="color: white;">
+                            <img src="/img/check.png" alt="Check" class="img-fluid" style="filter: brightness(0) invert(1);">
+                            Exportación de ingresos
+                        </li>
+                        <li class="mt-4" style="color: white;">
+                            <img src="/img/check.png" alt="Check" class="img-fluid" style="filter: brightness(0) invert(1);">
+                            Registro de personal (100)
+                        </li>
+                        <li class="mt-4" style="color: white;">
+                            <img src="/img/check.png" alt="Check" class="img-fluid" style="filter: brightness(0) invert(1);">
+                            Registro de productos limitado
+                        </li>
+                    </ul>
+                    <div class="mt-4 text-center">
+                        <button class="btn btn-primary mt-auto" style="background-color: white; color: #0CB7F2; width: 100%;border-radius: 24px ">
+                            <strong>Elegir</strong> su <strong>Plan</strong>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-7 col-xl-7 mb-5" style="margin-top: 150px;">
-            <div class="d-flex align-items-end justify-content-center h-100">
-                <div class="custom-form-container" style="border-radius: 50px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); z-index: 0;">
-                    <div class="modal-content" style="border-radius: 30px;">
-                        <div class="col mt-3 text-center">
-                            <p style="color: #000; font-size: 24px; margin-bottom: 10px;">Bienvenido a <span style="color: #0CB7F2; font-size: 21px; font-weight: bold">ELEMENTAL</span></p>
-                            <h4 style="color: #000; font-size: 32px; font-weight: 700; margin-top: 0;">CREA TU CUENTA <span style="color: goldenrod;">GRATIS</span></h4>
-                        </div>
-                        <div class="modal-body px-5">
-                            <form id="step-1">
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="nombres" style="color: #000;">Nombres</label>
-                                        <input type="text" class="form-control" id="nombres" placeholder="Nombres" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" oninput="validateInput(this)" required>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="apellidos" style="color: #000;">Apellidos</label>
-                                        <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+" oninput="validateInput(this)" required>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-md-12 mb-3">
-                                        <label for="nombre-empresa" style="color: #000;">Nombre de la empresa</label>
-                                        <input type="text" class="form-control" id="nombre-empresa" placeholder="Nombre de la empresa" required>
-                                    </div>
-                                </div>
-                                <div class="form-group mb-3">
-                                    <label for="razon-social" style="color: #000;">Razón social</label>
-                                    <input type="text" class="form-control" id="razon-social" placeholder="Razón social" required>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="dni" style="color: #000;">DNI</label>
-                                        <input type="number" class="form-control" id="dni" placeholder="DNI" required>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="numero-celular" style="color: #000;">Número de celular</label>
-                                        <input type="number" class="form-control" id="numero-celular" placeholder="Número de celular" required>
-                                    </div>
-                                </div>
-                                <div class="modal-footer d-flex align-items-center justify-content-center">
-                                    <button type="button" class="btn botonceles" onclick="validateStep1()">Siguiente</button>
-                                </div>
-                            </form>
-                            <form id="step-2" style="display: none;" onsubmit="sendRegister()">
-                                <div class="form-group mb-3">
-                                    <label for="email" style="color: #000;">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email" required>
-                                </div>
-                                <div class="form-group mb-3">
-                                    <label for="contrasena" style="color: #000;">Contraseña</label>
-                                    <input type="password" class="form-control" id="contrasena" placeholder="Contraseña" required>
-                                </div>
-                                <div class="form-group mb-3">
-                                    <label for="confirmar-contrasena" style="color: #000;">Confirmar contraseña</label>
-                                    <input type="password" class="form-control" id="confirmar-contrasena" placeholder="Confirmar contraseña" oninput="validatePasswordsMatch()" required>
-                                </div>
-                                <div class="form-group mb-3">
-                                    <label for="email" style="color: #000;">Plan</label>
-                                    <select id="select-plan" class="form-control" required>
+        <div class="col-md-1 mt-1 "></div>
+      <div class="col-md-4 mt-1 ">
+        <div class="card h-100" style="background-color: #F3F3F3;border-radius: 12px">
+          <div class="card-body d-flex flex-column">
+              <h4 class="card-title text-center">Dorado</h4>
+              <h4 class="card-title text-center">S/. 250/mes</h4>
+            <ul style="list-style: none;" class="mt-4 flex-grow-1">
+              <li>
+                <img src="/img/check.png" alt="Check" class="img-fluid">
+                Usuarios ilimitados
+              </li>
+              <li class="mt-4">
+                <img src="/img/check.png" alt="Check" class="img-fluid">
+                PreFacturación ilimitado
+              </li>
+              <li class="mt-4">
+                <img src="/img/check.png" alt="Check" class="img-fluid">
+                Registro de servicios
+              </li>
+              <li class="mt-4">
+                <img src="/img/check.png" alt="Check" class="img-fluid">
+                Control de caja
+              </li>
+              <li class="mt-4">
+                <img src="/img/check.png" alt="Check" class="img-fluid">
+                Control de asistencia
+              </li>
+              <li class="mt-4">
+                <img src="/img/check.png" alt="Check" class="img-fluid">
+                Gestión de personal
+              </li>
+              <li class="mt-4">
+                <img src="/img/check.png" alt="Check" class="img-fluid">
+                Gestión de inventario
+              </li>
+              <li class="mt-4">
+                <img src="/img/check.png" alt="Check" class="img-fluid">
+                Gestión de citas
+              </li>
+              <li class="mt-4">
+                <img src="/img/check.png" alt="Check" class="img-fluid">
+                Gestión contable
+              </li>
+              <li class="mt-4">
+                <img src="/img/check.png" alt="Check" class="img-fluid">
+                Gestión financiera
+              </li>
+            </ul>
+            <div class="mt-4 text-center">
+              <button class="btn btn-primary mt-auto" style="background-color: #0CB7F2; color: white; width: 100%;border-radius: 24px ">
+                <strong>Elegir</strong> su <strong>Plan</strong>
+              </button>
 
-                                    </select>
-                                </div>
-                                <small style="color: gray;">Evita utilizar números consecutivos, como 1, 2, 3, 4, 5, 6, y también evita utilizar tu fecha de cumpleaños.</small>
-                                <div class="modal-footer d-flex align-items-center justify-content-center">
-                                    <button type="button" class="btn botonceles" onclick="goToStep(1)">Volver</button>
-                                    <button type="button" class="btn botonceles" onclick="sendRegister()">Finalizar</button>
-                                  </div>
-                            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="final" class="five-section mb-5 container-fluid" style="background-color: #0CB7F2; padding: 20px;">
+     <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="modal-dialog modal-dialog-centered " >
+                    <div class="modal-content ms-5 me-5">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Formulario de contacto</h5>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="ej: Juan">
+                            </div>
+                            <div class="form-group">
+                                <label for="correo">Correo electrónico</label>
+                                <input type="email" class="form-control" id="correo" placeholder="ej: Juan@gmail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="celular">Celular</label>
+                                <input type="text" class="form-control" id="celular" placeholder="ej: +51 999 999 999">
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" placeholder="Hola..."></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer text-center">
+                            <button class="btn btn-primary mt-auto" style="background-color: #0CB7F2; color: white; width: 100%;border-radius: 24px ">
+                                Enviar Información
+                            </button>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-5 col-xl-5 mb-5 final mobile">
-            <div class="p-5">
-                <p class="text-muted">Con Elemental, podrás automatizar tus procesos empresariales, desde la gestión de inventario y compras hasta la contabilidad y la generación de informes. Olvídate de las tareas tediosas y dedica tu tiempo y recursos a lo que realmente importa: hacer crecer tu negocio.</p>
-            </div>
-        </div>
-    </div>
+    <style>
+        #final {
+            background-image: url('/img/finalcall.png');
+            background-size: 75%;
+            background-repeat: no-repeat;
+            background-position: calc(100% - 20px) center;
+            padding: 20px 20px 0;
+        }
+    </style>
 </section>
+
